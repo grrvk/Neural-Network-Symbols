@@ -84,7 +84,7 @@ model = Sequential(
 
 
 model.compile(
-    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False),
     optimizer = 'adam', metrics = ['accuracy']
 )
 
